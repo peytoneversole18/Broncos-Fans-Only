@@ -1,0 +1,214 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #fafafa;
+}
+
+nav {
+    background-color: #002244;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    color: #002244;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #002244;
+    letter-spacing: 1px;
+}
+
+a {
+    color: #FB4F14;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #FB4F14;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navy-number {
+    color: #002244;
+    font-weight: bold;
+}
+
+.broncos-orange {
+    color: #FB4F14; /* official Denver Broncos orange */
+    font-weight: bold; /* optional, makes it pop */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.subcomment {
+    font-size: 12px;
+    color: #777777;
+    margin-top: -5px;
+}
+
+.portfolio-placeholder {
+    background-color: #002244;
+    padding: 20px;
+    /* no height */
+}
+
+
+.instagram-follow {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.position-tag {
+    background-color: #002244;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.draft-board {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    font-family: Tahoma, Geneva, sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.draft-board li {
+    background-color: white;
+    border-left: 6px solid #002244;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    width: fit-content;
+}
+
+.rank {
+    color: #FB4F14;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.grade {
+    color: #002244;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.projection {
+    color: #666666;
+    margin-left: 6px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center; /* vertically centers the logo with the text */
+    gap: 15px;           /* space between logo and title */
+}
+
+.title-logo {
+    width: 60px;          /* size of the logo */
+    height: 60px;
+    border-radius: 50%;   /* makes it a circle */
+    object-fit: cover;    /* ensures the image fills the circle without distortion */
+    border: 2px solid #002244; /* optional navy border */
+}
+
+/* Portfolio box */
+.portfolio-placeholder {
+    background-color: #002244;
+    padding: 20px;
+}
+
+/* Grid container for images */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 25px; /* slightly smaller gap so images appear larger */
+}
+
+/* Images in the grid */
+.portfolio-grid .portfolio-image {
+    width: 100%;       /* fills the column width */
+    height: 100%;     /* taller images to fill more of the page */
+    object-fit: cover; /* crops image nicely without stretching */
+    border-radius: 0px; /* optional rounded corners */
+}
+
+/* Lightbox overlay */
+.lightbox {
+    display: none;             /* hidden by default */
+    position: fixed;           /* covers whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* dark semi-transparent */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Lightbox image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <link rel="stylesheet" href="style.css">
+
+  <head>
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page2.html">Portfolio</a></li>
+    <li><a href="page3.html">2026 NFL Draft</a></li>
+  </ul>
+</nav>
+
+<div class="title-container">
+    <a href="index.html">
+  <img src="images/bfo-logo.jpg" alt="BFO Logo" class="title-logo">
+</a>
+<h1>My Portfolio:</h1>
+</div>
+
+<p> Heres a look at some of my favorite graphics I have created over the years. I just included some of my recent favorites, but you can head over to my Instagram to see all of my work!</p>
+
+
+<div class="portfolio-placeholder">
+  <div class="portfolio-grid">
+    <img src="images/portfolio-img1.jpg" alt="Broncos Photo 1" class="portfolio-image">
+    <img src="images/portfolio-img2.jpg" alt="Broncos Photo 2" class="portfolio-image">
+    <img src="images/portfolio-img3.jpg" alt="Broncos Photo 3" class="portfolio-image">
+     <img src="images/portfolio-img4.jpg" alt="Broncos Photo 3" class="portfolio-image">
+      <img src="images/portfolio-img5.jpg" alt="Broncos Photo 3" class="portfolio-image">
+    <img src="images/portfolio-img6.jpg" alt="Broncos Photo 3" class="portfolio-image">
+    <img src="images/portfolio-img7.jpg" alt="Broncos Photo 3" class="portfolio-image">
+    <img src="images/portfolio-img8.jpg" alt="Broncos Photo 3" class="portfolio-image">
+    <img src="images/portfolio-img9.jpg" alt="Broncos Photo 3" class="portfolio-image">
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="Expanded Portfolio Image" id="lightbox-img">
+</div>
+
+<p class="instagram-follow">
+  <a href="https://www.instagram.com/broncosfans.only/" target="_blank">
+    Follow Me on Instagram <span class="broncos-orange">@broncosfans.only</span>
+  </a>
+</p>
+
+<footer>
+  <p>© 2026 Peyton Eversole | Broncos Fans Only Social Media Portfolio</p>
+</footer>
+
+</body>
+
+<script>
+const images = document.querySelectorAll('.portfolio-image');
+
+images.forEach(img => {
+    img.addEventListener('mouseover', () => {
+        img.style.transform = 'scale(1.05)';
+        img.style.transition = 'transform 0.3s';
+    });
+    img.addEventListener('mouseout', () => {
+        img.style.transform = 'scale(1)';
+    });
+});
+</script>
+
+<script>
+// Click-to-expand lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+});
+</script>
+
+
+</html>
