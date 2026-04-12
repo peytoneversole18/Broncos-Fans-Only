@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <head>
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page2.html">Portfolio</a></li>
+    <li><a href="page3.html">2026 NFL Draft</a></li>
+    <li><a href="materialize.html">Materialize</a></li>
+    <li><a href="materialize2.html">Materialize 2</a></li>
+  </ul>
+</nav>
+
+<div class="title-container">
+    <a href="index.html">
+  <img src="images/bfo-logo.jpg" alt="BFO Logo" class="title-logo">
+</a>
+<h1>Materialize Page #2:</h1>
+</div>
+
+<p>Coding practice for Materialize JavaScript Page Assignment!</p>
+
+
+<div style="
+  background-color: #002244;
+  border: 2px solid #fb4f14;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+">
+
+  <h5 style="color: white; margin-bottom: 15px;">
+    Top 10 Prospects at Each Position for the 2026 NFL Draft (so far!)
+  </h5>
+
+  <div class="carousel" id="myCarousel">
+
+    <a class="carousel-item">
+    <img src="images/top-10-rb.jpg" style="width: 165px; height: 206px; object-fit: cover; border-radius: 10px;">
+
+    <a class="carousel-item">
+    <img src="images/top-10-te.jpg" style="width: 165px; height: 206px; object-fit: cover; border-radius: 10px;">
+
+    <a class="carousel-item">
+    <img src="images/top-10-ot.jpg" style="width: 165px; height: 206px; object-fit: cover; border-radius: 10px;">
+
+    <a class="carousel-item">
+    <img src="images/top-10-dl.jpg" style="width: 165px; height: 206px; object-fit: cover; border-radius: 10px;">
+
+    <a class="carousel-item">
+    <img src="images/top-10-lb.jpg" style="width: 165px; height: 206px; object-fit: cover; border-radius: 10px;">
+
+  </div>
+
+</div>
+
+<div id="pollBox" style="
+  background-color: #002244;
+  border: 2px solid #fb4f14;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  color: white;
+">
+
+  <h5>What POSITION will the Broncos draft with the 62nd pick?</h5>
+
+  <button onclick="vote('Runningback')" class="btn" style="margin:5px; background:#fb4f14;">
+    Runningback
+  </button>
+
+  <button onclick="vote('Tight End')" class="btn" style="margin:5px; background:#fb4f14;">
+    Tight End
+  </button>
+
+  <button onclick="vote('O-Lineman')" class="btn" style="margin:5px; background:#fb4f14;">
+    O-Lineman
+  </button>
+
+  <button onclick="vote('D-Lineman')" class="btn" style="margin:5px; background:#fb4f14;">
+    D-Lineman
+  </button>
+
+  <button onclick="vote('Defensive Back')" class="btn" style="margin:5px; background:#fb4f14;">
+    Defensive Back
+  </button>
+
+</div>
+
+<div id="pollResult" style="
+  text-align:center;
+  margin-top:15px;
+  font-weight:bold;
+"></div>
+
+
+
+<footer>
+  <p>© 2026 Peyton Eversole | Broncos Fans Only Social Media Portfolio</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const elem = document.querySelector('#myCarousel');
+
+  const instance = M.Carousel.init(elem, {
+    numVisible: 4,
+    dist: -80,
+    shift: 0,
+    padding: 10,
+    indicators: false
+  });
+
+  // AUTO SCROLL
+  setInterval(() => {
+    instance.next();
+  }, 2500);
+
+});
+</script>
+
+<script>
+function vote(choice) {
+  document.getElementById("pollBox").style.display = "none";
+  document.getElementById("pollResult").innerText =
+    "You voted for " + choice + " for the Broncos 62nd pick!";
+}
+</script>
+
+</body>
+
+</html>
