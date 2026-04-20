@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <head>
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page2.html">Portfolio</a></li>
+    <li><a href="page3.html">2026 NFL Draft</a></li>
+    <li><a href="materialize.html">Materialize</a></li>
+    <li><a href="materialize2.html">Materialize 2</a></li>
+     <li><a href="jquery.html">jQuery</a></li>
+  </ul>
+</nav>
+
+<div class="title-container">
+    <a href="index.html">
+  <img src="images/bfo-logo.jpg" alt="BFO Logo" class="title-logo">
+</a>
+<h1>jQuery Page:</h1>
+</div>
+
+<p>Coding practice for jQuery Page Assignment!</p>
+
+<div id="contentArea">
+
+  <!-- your stuff -->
+  <button id="hideBtn">Show / Hide Box</button>
+  <button id="textBtn">Change Text</button>
+  <div id="box">4 days away from the NFL Draft 👀</div>
+
+</div>
+
+<button id="hideAllBtn">Hide Section</button>
+
+
+<script>
+  $("#hideBtn").click(function() {
+    $("#box").toggle();
+  });
+</script>
+
+
+<script>
+  let changed = false;
+
+  $("#textBtn").click(function() {
+    if (changed) {
+      $("#box").html("4 days away from the NFL Draft 👀");
+    } else {
+      $("#box").html("<strong> 5 days until the Broncos pick...<strong>");
+    }
+    changed = !changed;
+  });
+</script>
+
+<script>
+  $("#hideAllBtn").click(function() {
+    $("#contentArea").toggle();
+  });
+</script>
+
+
+
+
+
+
+
+<footer>
+  <p>© 2026 Peyton Eversole | Broncos Fans Only Social Media Portfolio</p>
+</footer>
+
+</body>
+
+</html>
