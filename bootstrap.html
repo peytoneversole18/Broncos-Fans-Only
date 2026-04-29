@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <head>
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+  <body>
+
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page2.html">Portfolio</a></li>
+    <li><a href="page3.html">2026 NFL Draft</a></li>
+    <li><a href="materialize.html">Materialize</a></li>
+    <li><a href="materialize2.html">Materialize 2</a></li>
+    <li><a href="jquery.html">jQuery</a></li>
+    <li><a href="bootstrap.html">Bootstrap</a></li>
+  </ul>
+</nav>
+
+<div class="title-container">
+    <a href="index.html">
+</a>
+<h1>Bootstrap Page:</h1>
+</div>
+
+<p>Coding practice for Bootstrap Page Assignment!</p>
+
+<h2 class="mt-5">Broncos 2026 Draft Recap: (Accordion)</h2>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+        Broncos 2026 NFL Draft Summary:
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        The Denver Broncos entered the 2026 NFL Draft without first- or second-round picks, making their first selection in the third round where they drafted Tyler Onyedim, a defensive lineman from Texas A&M. In the fourth round, they added running back Jonah Coleman from Washington and offensive lineman Kage Casey from Boise State to strengthen both sides of the offense. The Broncos continued in the fifth round by selecting tight end Justin Joly out of NC State. They wrapped up their draft in the seventh round with three picks, choosing safety Miles Scott from Illinois, tight end Dallen Bentley from Utah, and linebacker Red Murdock from Buffalo, rounding out a class focused on depth and versatility.
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="mt-5">Broncos 2026 Draft Results (Pop-Up)</h2>
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Full Results:
+</button>
+
+<div class="modal fade" id="exampleModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Denver Broncos 2026 Draft Haul:</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Round 3 (66): Tyler Onyedim, DL – Texas A&M<br>
+                Round 4 (108): Jonah Coleman, RB – Washington<br>
+Round 4 (111): Kage Casey, OL – Boise State<br>
+Round 5 (trade up): Justin Joly, TE – NC State<br>
+Round 7 (246): Miles Scott, S – Illinois<br>
+Round 7 (256): Dallen Bentley, TE – Utah<br>
+Round 7 (257): Red Murdock, LB – Buffalo
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<h2 class="mt-5">Contact Form</h2>
+
+<form>
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" placeholder="Enter your name">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control" placeholder="Enter your email">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+<footer>
+  <p>© 2026 Peyton Eversole | Broncos Fans Only Social Media Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
